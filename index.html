@@ -1,29 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vercel Pag</title>
+    <title>Página de Prueba Colorida</title>
     <style>
         body {
-            flex:auto;
-            align-content: center;
-            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3ec78, #af4261);
+            background-size: 100% 100%; /* Asegura que el degradado cubra todo */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh; /* Asegura que el fondo cubra toda la altura */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente */
         }
-        div {
-            align-items: center;
-            align-content: center;
+        h1 {
+            font-size: 3em;
+            margin-top: 0;
         }
-
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 20px 2px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #ff4c3b;
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #fff;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+        }
+        .icon {
+            font-size: 2em;
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
-    <marquee behavior="" direction="right">HOLAAAAAA</marquee>
+
+    <h1>¡Bienvenido a Mi Página Colorida!</h1>
+    <p>Explora el mundo de los colores y las formas.</p>
+
     <div>
-        Isabela 
+        <a href="#" class="button">Botón 1</a>
+        <a href="#" class="button">Botón 2</a>
+        <a href="#" class="button">Botón 3</a>
     </div>
+
     <div>
-        Juan Fernando
+        <span class="icon">🌈</span>
+        <span class="icon">✨</span>
+        <span class="icon">🌟</span>
+        <span class="icon">🎨</span>
     </div>
+
+    <footer>
+        &copy; 2024 Mi Página Colorida. Todos los derechos reservados.
+    </footer>
+
 </body>
 </html>
